@@ -1,3 +1,6 @@
+# Awesome Employee Management System
+
+A simple app for importing and managing employees of an awesome company. 
 
 ## Requirements
 

@@ -83,8 +83,6 @@ class ImportEmployeeData extends Command
                     continue;
                 }
 
-                $rows[] = $employeeData;
-
                 try {
                     DB::table('employees')->insert($employeeData);
                 } catch (\Illuminate\Database\QueryException $e) {
