@@ -87,6 +87,7 @@ class ImportEmployeeData extends Command
                     DB::table('employees')->insert($employeeData);
                 } catch (\Illuminate\Database\QueryException $e) {
                     $this->warn("Failed to insert entry with ID {$entry['id']}");
+                    throw $e;
                 }
             }
 
